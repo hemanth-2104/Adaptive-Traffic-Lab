@@ -1,0 +1,7 @@
+{
+  "filename": "demo-assets-v1.zip",
+  "url": "https://github.com/hemanth-2104/Adaptive-Traffic-Lab/releases/download/v1.0.0/demo-assets-v1.zip",
+  "sha256": "ad92e8e503a5bd4b5f1922c5238968d10fecc96067b79bca7321e23cfc1f55f3",
+  "bytes": 52106881,
+  "contains": "selected small classifier checkpoints, cached features, QA manifests, raw responses and evaluation evidence; excludes source photographs and pretrained Qwen"
+}

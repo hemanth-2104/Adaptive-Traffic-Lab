@@ -1,0 +1,41 @@
+{
+  "dataset_version": "DriveLM-nuScenes v1.0 author-hosted training release",
+  "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "split_seed": 572,
+  "max_frames": 240,
+  "questions_per_category_per_frame": 1,
+  "categories": [
+    "perception",
+    "prediction",
+    "planning"
+  ],
+  "split_ratios": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "hidden_dim": 256,
+  "gru_steps": 3,
+  "train_seeds": [
+    18,
+    42,
+    572
+  ],
+  "learning_rates": [
+    0.0003,
+    0.001
+  ],
+  "weight_decay": 0.01,
+  "batch_size": 64,
+  "max_epochs": 120,
+  "patience": 15,
+  "max_pixels": 200704,
+  "view_width": 448,
+  "view_height": 252,
+  "direct_max_new_tokens": 8,
+  "cot_max_new_tokens": 96,
+  "fact_max_new_tokens": 256,
+  "protocol_version": "1.0",
+  "precision": "bfloat16",
+  "camera_policy": "All methods receive the same six-camera composite per frame, with markers from the selected frame questions only."
+}

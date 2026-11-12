@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adaptive-traffic-lab"
+version = "1.0.0"
+description = "Adaptive latent refinement with an auditable advisory symbolic consistency checker"
+requires-python = ">=3.11,<3.14"
+dependencies = ["torch>=2.5,<3", "numpy>=1.26,<3", "scikit-learn>=1.5,<2", "networkx>=3,<4", "Pillow>=10,<13", "matplotlib>=3.9,<4", "fastapi>=0.115,<1", "uvicorn>=0.34,<1", "psutil>=6,<8"]
+
+[project.optional-dependencies]
+research = ["torchvision>=0.20,<1", "transformers>=4.51,<5", "accelerate>=1,<2", "qwen-vl-utils>=0.0.10,<1", "gdown>=5.2,<6", "huggingface-hub>=0.30,<1"]
+test = ["pytest>=8,<10", "httpx>=0.28,<1"]
+
+[project.scripts]
+traffic-lab = "nslcot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

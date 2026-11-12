@@ -1,0 +1,23 @@
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.egg-info/
+build/
+dist/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+data/raw/
+data/images/
+models/qwen2.5-vl-3b/
+results/**/diagnostics/
+*.log
+# Downloaded, checksummed release bundle assets
+release/
+data/processed/
+results/
+models/model_provenance.json
